@@ -25,7 +25,15 @@ public class MyKafkaProducer {
 
         KafkaProducer<String, Log> kafkaProducer = new KafkaProducer<>(prop);
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 50; i++) {
+
+            if (i % 10 == 0) {
+                try {
+                    Thread.sleep(1000 * 10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
 
             Log log = new Log(i + "20435", System.currentTimeMillis(), "1000" + i, "test@tuyoogame.com", "track",
                     "create", new ProjectRequest(System.currentTimeMillis() + ""));

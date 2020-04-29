@@ -1,6 +1,7 @@
 package com.hth.flink.sink;
 
 import com.hth.flink.bean.Log;
+import org.apache.flink.api.common.accumulators.IntCounter;
 import org.apache.flink.configuration.Configuration;
 import org.apache.flink.streaming.api.functions.sink.RichSinkFunction;
 
@@ -15,7 +16,7 @@ import java.sql.SQLException;
  * @Email hantenghui@tuyoogame.com
  */
 public class MysqlSink extends RichSinkFunction<Log> {
-    private String url = "jdbc:mysql://hthmac:3306/practice";
+    private String url = "jdbc:mysql://hthmac:3306/practice?useUnicode=true&characterEncoding=utf-8&useSSL=false";
     private String driver = "com.mysql.jdbc.Driver";
     private String username = "root";
     private String passwd = "123456";
@@ -23,16 +24,20 @@ public class MysqlSink extends RichSinkFunction<Log> {
     private PreparedStatement prep;
 
     private String device_id;
-    private String  event;
+    private String event;
     private long event_time;
     private String project_id;
     private String user_id;
     private String type;
     private String proj_request_id;
 
+    private IntCounter counter = new IntCounter(1);
+    private long timer = System.currentTimeMillis();
+
     private void init() throws SQLException, ClassNotFoundException {
         Class.forName(this.driver);
         conn = DriverManager.getConnection(this.url, this.username, this.passwd);
+        conn.setAutoCommit(false);
         prep = conn.prepareStatement("insert into practice.log values(?, ?, ?, ?, ?, ?, ?)");
     }
 
@@ -49,6 +54,17 @@ public class MysqlSink extends RichSinkFunction<Log> {
 
     @Override
     public void invoke(Log data, Context context) throws Exception {
+        addBatch(data);
+        if (counter.getLocalValue() % 50 == 0 || System.currentTimeMillis() - timer > 1000 * 30) {
+            prep.executeBatch();
+            timer = System.currentTimeMillis();
+            conn.commit();
+        }
+    }
+
+    private void addBatch(Log data) throws SQLException {
+        counter.add(1);
+
         device_id = data.getDevice_id();
         event = data.getEvent();
         event_time = data.getEvent_time();
@@ -64,7 +80,7 @@ public class MysqlSink extends RichSinkFunction<Log> {
         prep.setString(5, user_id);
         prep.setString(6, type);
         prep.setString(7, proj_request_id);
-        int res = prep.executeUpdate();
-        if (res > 0) System.out.println("插入成功");
+
+        prep.addBatch();
     }
 }
