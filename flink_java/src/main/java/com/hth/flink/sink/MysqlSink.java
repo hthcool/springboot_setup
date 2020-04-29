@@ -55,7 +55,7 @@ public class MysqlSink extends RichSinkFunction<Log> {
     @Override
     public void invoke(Log data, Context context) throws Exception {
         addBatch(data);
-        if (counter.getLocalValue() % 50 == 0 || System.currentTimeMillis() - timer > 1000 * 30) {
+        if (counter.getLocalValue() % 1000 == 0 || System.currentTimeMillis() - timer > 1000 * 30) {
             prep.executeBatch();
             timer = System.currentTimeMillis();
             conn.commit();

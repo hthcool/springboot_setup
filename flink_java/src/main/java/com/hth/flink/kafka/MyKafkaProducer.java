@@ -25,11 +25,11 @@ public class MyKafkaProducer {
 
         KafkaProducer<String, Log> kafkaProducer = new KafkaProducer<>(prop);
 
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 50000; i++) {
 
-            if (i % 10 == 0) {
+            if (i % 1000 == 0) {
                 try {
-                    Thread.sleep(1000 * 10);
+                    Thread.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
