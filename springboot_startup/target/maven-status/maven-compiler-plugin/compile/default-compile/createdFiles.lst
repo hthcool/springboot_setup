@@ -1,0 +1,13 @@
+com/hth/springboot/service/UserService.class
+com/hth/springboot/dao/UserDao.class
+com/hth/springboot/bean/status/InsertStatus.class
+com/hth/springboot/StartupApplication.class
+com/hth/springboot/bean/config/AuthorInfo.class
+com/hth/springboot/bean/queryresult/User.class
+com/hth/springboot/bean/requestparams/QueryDAUParams.class
+com/hth/springboot/utils/ImpalaConnection.class
+com/hth/springboot/controller/UserController.class
+com/hth/springboot/service/impl/UserServiceImpl.class
+com/hth/springboot/dao/impl/UserDaoImpl.class
+com/hth/springboot/utils/JDBCUtils.class
+com/hth/springboot/bean/queryresult/PersonCount.class

@@ -1,0 +1,19 @@
+2020-04-26 11:39:45,152  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-26 11:39:55,416  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-26 11:40:00,420  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 24447 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-26 11:40:00,421  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-26 11:40:00,988  INFO RepositoryConfigurationDelegate:249 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-04-26 11:40:00,990  INFO RepositoryConfigurationDelegate:127 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-04-26 11:40:01,014  INFO RepositoryConfigurationDelegate:187 - Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-04-26 11:40:01,353  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-26 11:40:01,439  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 859 ms
+2020-04-26 11:40:01,653  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-26 11:40:02,050  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-26 11:40:02,053  INFO StartupApplication:61 - Started StartupApplication in 16.994 seconds (JVM running for 22.738)
+2020-04-26 11:40:15,039  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-26 11:40:15,046  INFO DispatcherServlet:547 - Completed initialization in 7 ms
+2020-04-26 11:40:15,070  INFO UserController:43 - 接收到查询请求，请求路径为/user/1
+2020-04-26 11:40:15,289  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-26 11:40:15,309  WARN UserController:45 - 返回数据为User(name=han, pid=1)
+2020-04-26 11:40:15,309 ERROR UserController:46 - 返回数据为User(name=han, pid=1)
+2020-04-26 11:40:23,401  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'

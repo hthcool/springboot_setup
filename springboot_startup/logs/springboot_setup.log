@@ -1,0 +1,1576 @@
+2020-04-28 10:33:24,784  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-28 10:33:35,122  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-28 10:33:40,133  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 1423 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-28 10:33:40,134  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-28 10:33:41,260  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-28 10:33:41,382  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 993 ms
+2020-04-28 10:33:41,446  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2020-04-28 10:33:41,510  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-28 10:33:41,519 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:12)
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at com.hth.springboot.utils.ImpalaConnection.<clinit>(ImpalaConnection.java:24)
+	... 24 more
+2020-04-28 11:09:53,144  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-28 11:10:03,433  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-28 11:10:08,440  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 2022 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-28 11:10:08,440  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-28 11:10:09,237  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-28 11:10:09,469  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 867 ms
+2020-04-28 11:10:09,622  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 11:10:09,763  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 11:10:09,766  INFO StartupApplication:61 - Started StartupApplication in 16.717 seconds (JVM running for 22.977)
+2020-04-28 11:10:42,507  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-28 11:10:42,512  INFO DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-28 11:10:42,540  INFO UserController:47 - 接收到查询请求，请求路径为/user/1
+2020-04-28 11:10:42,844  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-28 11:10:42,869  WARN UserController:49 - 返回数据为User(name=han, pid=1)
+2020-04-28 11:10:42,870 ERROR UserController:50 - 返回数据为User(name=han, pid=1)
+2020-04-28 11:10:55,710  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-28 11:19:44,839  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-28 11:19:55,094  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-28 11:20:00,102  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 2977 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-28 11:20:00,103  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-28 11:20:00,875  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-28 11:20:00,965  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 700 ms
+2020-04-28 11:20:01,010  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static com.hth.springboot.bean.config.ImpalaConfig com.hth.springboot.utils.ImpalaConnection.config
+2020-04-28 11:20:01,117  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-28 11:20:01,253  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-28 11:20:01,258  INFO StartupApplication:61 - Started StartupApplication in 16.552 seconds (JVM running for 22.646)
+2020-04-28 11:20:08,868  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 10:57:35,717  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 10:57:46,023  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 10:57:51,032  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 3604 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 10:57:51,033  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 10:57:52,194  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 10:57:52,314  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 1017 ms
+2020-04-30 10:57:52,403  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2020-04-30 10:57:52,419  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-30 10:57:52,435 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:12)
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at com.hth.springboot.utils.ImpalaConnection.<clinit>(ImpalaConnection.java:30)
+	... 24 more
+2020-04-30 11:00:03,637  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:00:13,873  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:00:18,879  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 3813 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:00:18,880  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:00:19,707  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:00:19,808  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 759 ms
+2020-04-30 11:00:19,876  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2020-04-30 11:00:19,887  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-30 11:00:19,893 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:12)
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at com.hth.springboot.utils.ImpalaConnection.<clinit>(ImpalaConnection.java:30)
+	... 24 more
+2020-04-30 11:01:32,718  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:01:42,958  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:01:47,962  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 4099 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:01:47,963  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:01:48,832  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:01:48,943  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 816 ms
+2020-04-30 11:01:49,008  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2020-04-30 11:01:49,023  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-30 11:01:49,029 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:12)
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at com.hth.springboot.utils.ImpalaConnection.<clinit>(ImpalaConnection.java:30)
+	... 24 more
+2020-04-30 11:02:23,872  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:02:34,275  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:02:39,283  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 4261 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:02:39,284  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:02:40,312  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:02:40,432  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 934 ms
+2020-04-30 11:02:40,532  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2020-04-30 11:02:40,566  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-30 11:02:40,575 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'impalaConnection' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/utils/ImpalaConnection.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:12)
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 17 more
+Caused by: java.lang.NullPointerException
+	at com.hth.springboot.utils.ImpalaConnection.<clinit>(ImpalaConnection.java:30)
+	... 24 more
+2020-04-30 11:04:38,865  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:04:49,074  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:04:54,079  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 4712 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:04:54,080  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:04:54,839  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:04:54,929  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 693 ms
+2020-04-30 11:04:54,986  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUController': Unsatisfied dependency expressed through field 'dauService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUServiceImpl': Unsatisfied dependency expressed through field 'dauDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2020-04-30 11:04:54,997  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-30 11:04:55,002 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUController': Unsatisfied dependency expressed through field 'dauService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUServiceImpl': Unsatisfied dependency expressed through field 'dauDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:12)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUServiceImpl': Unsatisfied dependency expressed through field 'dauDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 32 more
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 43 more
+Caused by: java.lang.NullPointerException
+	at com.hth.springboot.utils.ImpalaConnection.init(ImpalaConnection.java:30)
+	at com.hth.springboot.dao.impl.DAUDaoImpl.<clinit>(DAUDaoImpl.java:20)
+	... 50 more
+2020-04-30 11:10:45,270  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:10:55,482  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:11:00,490  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 5924 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:11:00,491  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:11:01,404  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:11:01,519  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 835 ms
+2020-04-30 11:11:01,566  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUController': Unsatisfied dependency expressed through field 'dauService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUServiceImpl': Unsatisfied dependency expressed through field 'dauDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+2020-04-30 11:11:01,593  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-30 11:11:01,602 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUController': Unsatisfied dependency expressed through field 'dauService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUServiceImpl': Unsatisfied dependency expressed through field 'dauDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'DAUServiceImpl': Unsatisfied dependency expressed through field 'dauDao'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 more
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'DAUDaoImpl' defined in file [/Users/tu/IdeaProjects/springboot_startup/target/classes/com/hth/springboot/dao/impl/DAUDaoImpl.class]: Instantiation of bean failed; nested exception is java.lang.ExceptionInInitializerError
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 32 more
+Caused by: java.lang.ExceptionInInitializerError
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 43 more
+Caused by: java.lang.NullPointerException
+	at com.hth.springboot.utils.ImpalaConnection.init(ImpalaConnection.java:29)
+	at com.hth.springboot.dao.impl.DAUDaoImpl.<clinit>(DAUDaoImpl.java:20)
+	... 50 more
+2020-04-30 11:11:55,522  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:12:05,768  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:12:10,774  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 6158 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:12:10,775  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:12:11,548  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:12:11,627  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 685 ms
+2020-04-30 11:12:11,670  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static com.hth.springboot.bean.config.ImpalaConfig com.hth.springboot.utils.ImpalaConnection.config
+2020-04-30 11:12:11,803  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:12:11,995  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 11:12:11,998  INFO StartupApplication:61 - Started StartupApplication in 16.563 seconds (JVM running for 22.29)
+2020-04-30 11:12:44,161  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:12:44,167  INFO DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-30 11:12:44,201  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 11:14:02,715  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:14:41,927  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:14:52,140  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:14:57,144  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 6712 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:14:57,145  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:14:57,927  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:14:58,015  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 704 ms
+2020-04-30 11:14:58,177  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:14:58,320  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 11:14:58,323  INFO StartupApplication:61 - Started StartupApplication in 16.491 seconds (JVM running for 22.425)
+2020-04-30 11:15:01,766  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:15:01,771  INFO DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-30 11:15:01,796  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 11:15:02,154  INFO DAUController:28 - 返回结果是：
+2020-04-30 11:16:07,697  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:20:59,283  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:21:09,481  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:21:14,486  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 7991 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:21:14,487  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:21:15,253  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:21:15,346  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 702 ms
+2020-04-30 11:21:15,490  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:21:15,629  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 11:21:15,632  INFO StartupApplication:61 - Started StartupApplication in 16.438 seconds (JVM running for 22.073)
+2020-04-30 11:21:22,971  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:21:22,976  INFO DispatcherServlet:547 - Completed initialization in 4 ms
+2020-04-30 11:21:23,013  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 11:21:23,621  INFO DAUController:28 - 返回结果是：
+2020-04-30 11:21:51,649  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:22:28,323  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:22:38,533  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:22:43,536  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 8277 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:22:43,536  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:22:44,336  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:22:44,430  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 737 ms
+2020-04-30 11:22:44,575  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:22:44,716  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 11:22:44,719  INFO StartupApplication:61 - Started StartupApplication in 16.488 seconds (JVM running for 22.387)
+2020-04-30 11:22:46,337  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:22:46,344  INFO DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-30 11:22:46,382  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 11:22:47,082  INFO DAUController:28 - 返回结果是：
+2020-04-30 11:22:51,039  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:23:17,018  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:23:27,222  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:23:32,226  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 8443 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:23:32,227  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:23:33,026  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:23:33,107  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 699 ms
+2020-04-30 11:23:33,257  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:23:33,399  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 11:23:33,403  INFO StartupApplication:61 - Started StartupApplication in 16.474 seconds (JVM running for 22.338)
+2020-04-30 11:24:04,445  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:24:04,453  INFO DispatcherServlet:547 - Completed initialization in 7 ms
+2020-04-30 11:24:04,477  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 11:24:07,394  INFO DAUController:28 - 返回结果是：
+2020-04-30 11:26:28,026  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:26:37,551  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:26:47,762  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:26:52,767  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 9094 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:26:52,768  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:26:53,535  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:26:53,624  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 702 ms
+2020-04-30 11:26:53,764  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:26:53,904  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 11:26:53,908  INFO StartupApplication:61 - Started StartupApplication in 16.447 seconds (JVM running for 22.14)
+2020-04-30 11:26:56,817  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:26:56,825  INFO DispatcherServlet:547 - Completed initialization in 8 ms
+2020-04-30 11:26:56,849  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 11:27:02,787  INFO DAUController:28 - 返回结果是：57280,
+2020-04-30 11:32:11,033  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:51:48,825  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 11:51:59,067  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 11:52:04,070  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 14062 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 11:52:04,071  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 11:52:04,842  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 11:52:04,921  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 685 ms
+2020-04-30 11:52:05,073  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 11:52:05,242  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 11:52:05,247  INFO StartupApplication:61 - Started StartupApplication in 16.509 seconds (JVM running for 22.348)
+2020-04-30 11:52:16,410  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 11:52:16,417  INFO DispatcherServlet:547 - Completed initialization in 7 ms
+2020-04-30 11:52:16,447  INFO UserController:40 - 接收到查询请求，请求路径为/user/1
+2020-04-30 11:52:16,448  WARN UserController:42 - 返回数据为null
+2020-04-30 11:52:16,448 ERROR UserController:43 - 返回数据为null
+2020-04-30 11:52:23,015  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 11:52:23,018  INFO ImpalaConfig:31 - url: jdbc:impala://biserverha.ywdier.com:21050
+2020-04-30 11:52:23,020  INFO ImpalaConfig:32 - driver: com.cloudera.impala.impala.jdbc41.ImpalaJDBC41Driver
+2020-04-30 11:52:23,020  INFO ImpalaConfig:33 - host: biserverha.ywdier.com
+2020-04-30 11:52:23,021  INFO ImpalaConfig:34 - port: 21050
+2020-04-30 11:52:23,050  INFO ImpalaConnection:42 - 连接池初始化成功
+2020-04-30 11:52:25,599  INFO DAUController:28 - 返回结果是：57280,
+2020-04-30 11:53:15,217  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:02:04,471  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 14:02:14,687  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5007 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 14:02:19,693  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 16977 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 14:02:19,694  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 14:02:20,568  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 14:02:20,687  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 830 ms
+2020-04-30 14:02:20,857  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:02:21,020  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 14:02:21,024  INFO StartupApplication:61 - Started StartupApplication in 16.642 seconds (JVM running for 22.446)
+2020-04-30 14:02:45,440  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 14:02:45,447  INFO DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-30 14:02:45,485  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 14:02:45,486  INFO ImpalaConfig:32 - url: jdbc:impala://biserverha.ywdier.com:21050
+2020-04-30 14:02:45,486  INFO ImpalaConfig:33 - driver: com.cloudera.impala.impala.jdbc41.ImpalaJDBC41Driver
+2020-04-30 14:02:45,486  INFO ImpalaConfig:34 - host: biserverha.ywdier.com
+2020-04-30 14:02:45,487  INFO ImpalaConfig:35 - port: 21050
+2020-04-30 14:02:45,503  INFO ImpalaConnection:42 - 连接池初始化成功
+2020-04-30 14:04:00,797  INFO DAUController:28 - 返回结果是：
+2020-04-30 14:04:48,542  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:32:04,023  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 14:32:14,268  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 14:32:19,275  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 17370 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 14:32:19,276  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 14:32:20,629  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 14:32:20,743  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 1175 ms
+2020-04-30 14:32:20,929  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:32:21,125  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 14:32:21,129  INFO StartupApplication:61 - Started StartupApplication in 17.208 seconds (JVM running for 23.115)
+2020-04-30 14:32:24,369  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 14:32:24,375  INFO DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-30 14:32:24,398  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 14:32:24,482 ERROR DruidDataSource:910 - {dataSource-1} init error
+java.lang.ClassCastException: com.cloudera.impala.impala.jdbc41.ImpalaJDBC41Driver cannot be cast to java.sql.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:605)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:817)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1229)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.hth.springboot.utils.ImpalaConnection.getImpalaConnection(ImpalaConnection.java:51)
+	at com.hth.springboot.utils.ImpalaConnection.executeQuery(ImpalaConnection.java:75)
+	at com.hth.springboot.dao.impl.DAUDaoImpl.queryDAUByDayAndEvent(DAUDaoImpl.java:35)
+	at com.hth.springboot.service.impl.DAUServiceImpl.queryDauByDay(DAUServiceImpl.java:21)
+	at com.hth.springboot.controller.DAUController.queryDauByDay(DAUController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 14:33:04,375  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:33:42,247  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 14:33:52,504  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 14:33:57,511  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 17389 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 14:33:57,511  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 14:33:58,265  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 14:33:58,351  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 688 ms
+2020-04-30 14:33:58,492  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:33:58,625  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 14:33:58,628  INFO StartupApplication:61 - Started StartupApplication in 16.544 seconds (JVM running for 22.426)
+2020-04-30 14:34:06,984  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 14:34:06,989  INFO DispatcherServlet:547 - Completed initialization in 4 ms
+2020-04-30 14:34:07,027  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 14:35:22,435 ERROR DruidDataSource:872 - init datasource error, url: jdbc:impala://biserverha.ywdier.com:21050
+java.sql.SQLException: [Cloudera][ImpalaJDBCDriver](500164) Error initialized or created transport for authentication: Operation timed out (Connection timed out).
+	at com.cloudera.impala.hivecommon.api.HiveServer2ClientFactory.createTransport(Unknown Source)
+	at com.cloudera.impala.hivecommon.api.ServiceDiscoveryFactory.createClient(Unknown Source)
+	at com.cloudera.impala.hivecommon.core.HiveJDBCCommonConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.impala.core.ImpalaJDBCConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.jdbc.core.LoginTimeoutConnection.connect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.BaseConnectionFactory.doConnect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.AbstractDriver.connect(Unknown Source)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1229)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.hth.springboot.utils.ImpalaConnection.getImpalaConnection(ImpalaConnection.java:51)
+	at com.hth.springboot.utils.ImpalaConnection.executeQuery(ImpalaConnection.java:75)
+	at com.hth.springboot.dao.impl.DAUDaoImpl.queryDAUByDayAndEvent(DAUDaoImpl.java:35)
+	at com.hth.springboot.service.impl.DAUServiceImpl.queryDauByDay(DAUServiceImpl.java:21)
+	at com.hth.springboot.controller.DAUController.queryDauByDay(DAUController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+Caused by: com.cloudera.impala.support.exceptions.GeneralException: [Cloudera][ImpalaJDBCDriver](500164) Error initialized or created transport for authentication: Operation timed out (Connection timed out).
+	... 67 more
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.cloudera.impala.hivecommon.api.HiveServer2ClientFactory.createTransport(Unknown Source)
+	at com.cloudera.impala.hivecommon.api.ServiceDiscoveryFactory.createClient(Unknown Source)
+	at com.cloudera.impala.hivecommon.core.HiveJDBCCommonConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.impala.core.ImpalaJDBCConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.jdbc.core.LoginTimeoutConnection.connect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.BaseConnectionFactory.doConnect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.AbstractDriver.connect(Unknown Source)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1229)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.hth.springboot.utils.ImpalaConnection.getImpalaConnection(ImpalaConnection.java:51)
+	at com.hth.springboot.utils.ImpalaConnection.executeQuery(ImpalaConnection.java:75)
+	at com.hth.springboot.dao.impl.DAUDaoImpl.queryDAUByDayAndEvent(DAUDaoImpl.java:35)
+	at com.hth.springboot.service.impl.DAUServiceImpl.queryDauByDay(DAUServiceImpl.java:21)
+	at com.hth.springboot.controller.DAUController.queryDauByDay(DAUController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 14:35:22,451 ERROR DruidDataSource:905 - {dataSource-1} init error
+java.sql.SQLException: [Cloudera][ImpalaJDBCDriver](500164) Error initialized or created transport for authentication: Operation timed out (Connection timed out).
+	at com.cloudera.impala.hivecommon.api.HiveServer2ClientFactory.createTransport(Unknown Source)
+	at com.cloudera.impala.hivecommon.api.ServiceDiscoveryFactory.createClient(Unknown Source)
+	at com.cloudera.impala.hivecommon.core.HiveJDBCCommonConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.impala.core.ImpalaJDBCConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.jdbc.core.LoginTimeoutConnection.connect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.BaseConnectionFactory.doConnect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.AbstractDriver.connect(Unknown Source)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1229)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.hth.springboot.utils.ImpalaConnection.getImpalaConnection(ImpalaConnection.java:51)
+	at com.hth.springboot.utils.ImpalaConnection.executeQuery(ImpalaConnection.java:75)
+	at com.hth.springboot.dao.impl.DAUDaoImpl.queryDAUByDayAndEvent(DAUDaoImpl.java:35)
+	at com.hth.springboot.service.impl.DAUServiceImpl.queryDauByDay(DAUServiceImpl.java:21)
+	at com.hth.springboot.controller.DAUController.queryDauByDay(DAUController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+Caused by: com.cloudera.impala.support.exceptions.GeneralException: [Cloudera][ImpalaJDBCDriver](500164) Error initialized or created transport for authentication: Operation timed out (Connection timed out).
+	... 67 more
+Caused by: java.net.ConnectException: Operation timed out (Connection timed out)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at java.net.Socket.connect(Socket.java:538)
+	at com.cloudera.impala.hivecommon.api.HiveServer2ClientFactory.createTransport(Unknown Source)
+	at com.cloudera.impala.hivecommon.api.ServiceDiscoveryFactory.createClient(Unknown Source)
+	at com.cloudera.impala.hivecommon.core.HiveJDBCCommonConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.impala.core.ImpalaJDBCConnection.establishConnection(Unknown Source)
+	at com.cloudera.impala.jdbc.core.LoginTimeoutConnection.connect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.BaseConnectionFactory.doConnect(Unknown Source)
+	at com.cloudera.impala.jdbc.common.AbstractDriver.connect(Unknown Source)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1558)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1623)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:861)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1229)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.hth.springboot.utils.ImpalaConnection.getImpalaConnection(ImpalaConnection.java:51)
+	at com.hth.springboot.utils.ImpalaConnection.executeQuery(ImpalaConnection.java:75)
+	at com.hth.springboot.dao.impl.DAUDaoImpl.queryDAUByDayAndEvent(DAUDaoImpl.java:35)
+	at com.hth.springboot.service.impl.DAUServiceImpl.queryDauByDay(DAUServiceImpl.java:21)
+	at com.hth.springboot.controller.DAUController.queryDauByDay(DAUController.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2020-04-30 14:35:22,452  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 14:35:22,452 ERROR ImpalaConnection:53 - 获取连接出错，[Cloudera][ImpalaJDBCDriver](500164) Error initialized or created transport for authentication: Operation timed out (Connection timed out).
+2020-04-30 14:35:39,448  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 14:52:49,486 ERROR DruidDataSource:910 - {dataSource-1} init error
+java.lang.ClassCastException: com.cloudera.impala.impala.jdbc41.ImpalaJDBC41Driver cannot be cast to java.sql.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:605)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:817)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1229)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.hth.springboot.utils.ImpalaConnection.getImpalaConnection(ImpalaConnection.java:49)
+	at com.hth.springboot.utils.ImpalaConnection.main(ImpalaConnection.java:87)
+2020-04-30 15:04:06,667 ERROR DruidDataSource:910 - {dataSource-1} init error
+java.lang.ClassCastException: com.cloudera.impala.impala.jdbc41.ImpalaJDBC41Driver cannot be cast to java.sql.Driver
+	at com.alibaba.druid.util.JdbcUtils.createDriver(JdbcUtils.java:605)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:817)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1229)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:1225)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:90)
+	at com.hth.springboot.utils.ImpalaConnection.getImpalaConnection(ImpalaConnection.java:49)
+	at com.hth.springboot.utils.ImpalaConnection.main(ImpalaConnection.java:88)
+2020-04-30 15:04:55,418  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 15:08:46,918  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 15:08:57,116  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 15:09:02,121  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 18849 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 15:09:02,122  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 15:09:03,310  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 15:09:03,410  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 1089 ms
+2020-04-30 15:09:03,616  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:09:03,810  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 15:09:03,813  INFO StartupApplication:61 - Started StartupApplication in 16.985 seconds (JVM running for 22.662)
+2020-04-30 15:09:07,051  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 15:09:07,056  INFO DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-30 15:09:07,100  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 15:09:11,939  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 15:09:14,667  INFO DAUController:28 - 返回结果是：
+2020-04-30 15:09:24,252  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:11:31,712  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 15:11:41,912  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5004 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 15:11:46,916  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 19407 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 15:11:46,917  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 15:11:47,691  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 15:11:47,772  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 689 ms
+2020-04-30 15:11:47,922  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:11:48,067  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 15:11:48,071  INFO StartupApplication:61 - Started StartupApplication in 16.463 seconds (JVM running for 22.379)
+2020-04-30 15:11:57,103  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 15:11:57,108  INFO DispatcherServlet:547 - Completed initialization in 4 ms
+2020-04-30 15:11:57,131  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 15:12:05,922  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 15:12:07,920  INFO DAUController:28 - 返回结果是：57280,
+2020-04-30 15:12:12,599  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:53:09,534  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 15:53:19,758  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 15:53:24,765  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 25704 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 15:53:24,765  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 15:53:25,588  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 15:53:25,683  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 755 ms
+2020-04-30 15:53:25,755  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static javax.sql.DataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 15:53:25,859  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:53:25,967  INFO DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2020-04-30 15:53:26,002  WARN AnnotationConfigServletWebServerApplicationContext:558 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource': Unsatisfied dependency expressed through field 'basicProperties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseType
+2020-04-30 15:53:26,003  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:53:26,042  INFO ConditionEvaluationReportLoggingListener:136 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-04-30 15:53:26,047 ERROR SpringApplication:826 - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSource': Unsatisfied dependency expressed through field 'basicProperties'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseType
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.hth.springboot.StartupApplication.main(StartupApplication.java:12)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties': Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseType
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1320)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1290)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1210)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	... 19 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.boot.autoconfigure.jdbc.DataSourceProperties]: Constructor threw exception; nested exception is java.lang.NoClassDefFoundError: org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseType
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:217)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1312)
+	... 30 more
+Caused by: java.lang.NoClassDefFoundError: org/springframework/jdbc/datasource/embedded/EmbeddedDatabaseType
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.<clinit>(EmbeddedDatabaseConnection.java:51)
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.<init>(DataSourceProperties.java:152)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:204)
+	... 32 more
+Caused by: java.lang.ClassNotFoundException: org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 39 more
+2020-04-30 15:55:00,371  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 15:55:10,579  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5002 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 15:55:15,585  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 26151 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 15:55:15,586  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 15:55:16,526  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 15:55:16,605  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 847 ms
+2020-04-30 15:55:16,685  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static javax.sql.DataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 15:55:16,794  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:55:16,921  INFO DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2020-04-30 15:55:17,363  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 15:55:17,466  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 15:55:17,469  INFO StartupApplication:61 - Started StartupApplication in 17.183 seconds (JVM running for 23.253)
+2020-04-30 15:55:21,561  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 15:55:21,567  INFO DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-30 15:55:21,607  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 15:55:58,406  INFO DruidDataSource:1825 - {dataSource-1} closed
+2020-04-30 15:55:58,407  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:58:08,857  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 15:58:19,061  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 15:58:24,070  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 26789 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 15:58:24,070  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 15:58:24,964  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 15:58:25,047  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 821 ms
+2020-04-30 15:58:25,120  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static javax.sql.DataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 15:58:25,227  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:58:25,351  INFO DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2020-04-30 15:58:25,407 ERROR DruidDataSource:1070 - testWhileIdle is true, validationQuery not set
+2020-04-30 15:58:25,409  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 15:58:25,515  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 15:58:25,519  INFO StartupApplication:61 - Started StartupApplication in 16.75 seconds (JVM running for 22.487)
+2020-04-30 15:58:31,058  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 15:58:31,064  INFO DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-30 15:58:31,091  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 15:58:43,338  INFO DruidDataSource:1825 - {dataSource-1} closed
+2020-04-30 15:58:43,338  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 15:59:30,618  INFO SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hth.springboot.StartupApplicationTests], using SpringBootContextLoader
+2020-04-30 15:59:30,631  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.hth.springboot.StartupApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-30 15:59:30,633  INFO AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [com.hth.springboot.StartupApplicationTests]: StartupApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-30 15:59:30,809  INFO SpringBootTestContextBootstrapper:235 - Found @SpringBootConfiguration com.hth.springboot.StartupApplication for test class com.hth.springboot.StartupApplicationTests
+2020-04-30 15:59:30,914  INFO SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-30 15:59:30,934  INFO SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c430e6c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@312aa7c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@536f2a7e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72bc6553, org.springframework.test.context.support.DirtiesContextTestExecutionListener@66982506, org.springframework.test.context.transaction.TransactionalTestExecutionListener@70cf32e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a59ca5e, org.springframework.test.context.event.EventPublishingTestExecutionListener@4bdeaabb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6c4906d3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@65987993, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71075444, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4f32a3ad, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6b695b06]
+2020-04-30 15:59:31,014  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 15:59:36,297  WARN DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer:78 - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/tu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/Users/tu/.m2/repository/org/apache/hive/hive-exec/1.0.0/hive-exec-1.0.0.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-04-30 15:59:41,323  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 15:59:46,327  INFO StartupApplicationTests:55 - Starting StartupApplicationTests on TUdeMac-mini.local with PID 27084 (started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 15:59:46,328  INFO StartupApplicationTests:651 - No active profile set, falling back to default profiles: default
+2020-04-30 15:59:48,113 ERROR SpringApplication:826 - Application run failed
+java.lang.NoClassDefFoundError: org/eclipse/jetty/server/RequestLog$Writer
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:337)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:342)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:337)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:336)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:252)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:251)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.RequestLog$Writer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 81 more
+2020-04-30 15:59:48,120 ERROR TestContextManager:248 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@c430e6c] to prepare test instance [com.hth.springboot.StartupApplicationTests@8d7b252]
+java.lang.NoClassDefFoundError: org/eclipse/jetty/server/RequestLog$Writer
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:337)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:342)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:337)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:336)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:252)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:251)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.RequestLog$Writer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 81 more
+2020-04-30 16:01:28,534  INFO SpringBootTestContextBootstrapper:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.hth.springboot.StartupApplicationTests], using SpringBootContextLoader
+2020-04-30 16:01:28,552  INFO AbstractContextLoader:264 - Could not detect default resource locations for test class [com.hth.springboot.StartupApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-30 16:01:28,553  INFO AnnotationConfigContextLoaderUtils:83 - Could not detect default configuration classes for test class [com.hth.springboot.StartupApplicationTests]: StartupApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-30 16:01:28,897  INFO SpringBootTestContextBootstrapper:235 - Found @SpringBootConfiguration com.hth.springboot.StartupApplication for test class com.hth.springboot.StartupApplicationTests
+2020-04-30 16:01:29,092  INFO SpringBootTestContextBootstrapper:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2020-04-30 16:01:29,122  INFO SpringBootTestContextBootstrapper:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@c430e6c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@312aa7c, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@536f2a7e, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@72bc6553, org.springframework.test.context.support.DirtiesContextTestExecutionListener@66982506, org.springframework.test.context.transaction.TransactionalTestExecutionListener@70cf32e3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5a59ca5e, org.springframework.test.context.event.EventPublishingTestExecutionListener@4bdeaabb, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6c4906d3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@65987993, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@71075444, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4f32a3ad, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6b695b06]
+2020-04-30 16:01:29,261  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:01:34,686  WARN DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer:78 - 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/Users/tu/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/Users/tu/.m2/repository/org/apache/hive/hive-exec/1.0.0/hive-exec-1.0.0.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-04-30 16:01:39,706  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:01:44,714  INFO StartupApplicationTests:55 - Starting StartupApplicationTests on TUdeMac-mini.local with PID 27474 (started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:01:44,715  INFO StartupApplicationTests:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:01:46,143 ERROR SpringApplication:826 - Application run failed
+java.lang.NoClassDefFoundError: org/eclipse/jetty/server/RequestLog$Writer
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:337)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:342)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:337)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:336)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:252)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:251)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.RequestLog$Writer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 81 more
+2020-04-30 16:01:46,155 ERROR TestContextManager:248 - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@c430e6c] to prepare test instance [com.hth.springboot.StartupApplicationTests@15ac59c2]
+java.lang.NoClassDefFoundError: org/eclipse/jetty/server/RequestLog$Writer
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Class.java:2671)
+	at java.lang.Class.getDeclaredConstructors(Class.java:2020)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.findConstructorBindingAnnotatedConstructor(ConfigurationPropertiesBindConstructorProvider.java:62)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindConstructorProvider.getBindConstructor(ConfigurationPropertiesBindConstructorProvider.java:48)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBean$BindMethod.forType(ConfigurationPropertiesBean.java:311)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.validate(ConfigurationPropertiesBeanDefinitionValidator.java:63)
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBeanDefinitionValidator.postProcessBeanFactory(ConfigurationPropertiesBeanDefinitionValidator.java:45)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:286)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:174)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:706)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:98)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$5(ClassBasedTestDescriptor.java:337)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:342)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$6(ClassBasedTestDescriptor.java:337)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:175)
+	at java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1382)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:481)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:743)
+	at java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:742)
+	at java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:580)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:336)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:259)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$2(ClassBasedTestDescriptor.java:252)
+	at java.util.Optional.orElseGet(Optional.java:267)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$3(ClassBasedTestDescriptor.java:251)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:29)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:106)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:105)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$1(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:107)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:75)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at java.util.ArrayList.forEach(ArrayList.java:1257)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:38)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$5(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$7(NodeTestTask.java:125)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:135)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:122)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:80)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:32)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:51)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:229)
+	at org.junit.platform.launcher.core.DefaultLauncher.lambda$execute$6(DefaultLauncher.java:197)
+	at org.junit.platform.launcher.core.DefaultLauncher.withInterceptedStreams(DefaultLauncher.java:211)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:191)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:128)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:69)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.RequestLog$Writer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:349)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 81 more
+2020-04-30 16:08:42,548  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:08:52,774  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5003 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:08:57,777  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 28885 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:08:57,778  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:08:58,708  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:08:58,793  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 836 ms
+2020-04-30 16:08:58,873  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static javax.sql.DataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 16:08:59,003  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:08:59,115  INFO DruidDataSourceAutoConfigure:56 - Init DruidDataSource
+2020-04-30 16:08:59,169 ERROR DruidDataSource:1070 - testWhileIdle is true, validationQuery not set
+2020-04-30 16:08:59,172  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 16:08:59,275  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:08:59,278  INFO StartupApplication:61 - Started StartupApplication in 16.814 seconds (JVM running for 22.57)
+2020-04-30 16:09:05,306  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:09:05,311  INFO DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-30 16:09:05,338  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 16:12:04,798  INFO DruidDataSource:1825 - {dataSource-1} closed
+2020-04-30 16:12:04,798  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:12:16,488  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:12:26,691  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:12:31,695  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 29589 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:12:31,696  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:12:32,664  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:12:32,750  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 866 ms
+2020-04-30 16:12:32,829  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static javax.sql.DataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 16:12:32,999  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:12:33,208  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:12:33,211  INFO StartupApplication:61 - Started StartupApplication in 16.815 seconds (JVM running for 22.855)
+2020-04-30 16:12:35,992  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:12:35,999  INFO DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-30 16:12:36,026  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 16:12:47,409  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:13:20,505  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:13:30,747  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:13:35,753  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 29787 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:13:35,754  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:13:36,635  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:13:36,713  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 801 ms
+2020-04-30 16:13:36,787  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static javax.sql.DataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 16:13:36,977  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:13:37,179  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:13:37,182  INFO StartupApplication:61 - Started StartupApplication in 16.76 seconds (JVM running for 22.547)
+2020-04-30 16:13:37,906  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:13:37,912  INFO DispatcherServlet:547 - Completed initialization in 6 ms
+2020-04-30 16:13:37,938  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 16:13:43,818  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:15:49,147  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:15:59,454  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5006 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:16:04,459  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 30283 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:16:04,460  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:16:05,664  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:16:05,759  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 1087 ms
+2020-04-30 16:16:05,839  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static javax.sql.DataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 16:16:06,052  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:16:06,259  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:16:06,263  INFO StartupApplication:61 - Started StartupApplication in 17.276 seconds (JVM running for 23.836)
+2020-04-30 16:16:09,305  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:16:09,313  INFO DispatcherServlet:547 - Completed initialization in 8 ms
+2020-04-30 16:16:09,349  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 16:16:14,563  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:19:25,519  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:19:35,747  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:19:40,750  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 31006 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:19:40,751  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:19:41,628  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:19:41,712  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 804 ms
+2020-04-30 16:19:41,779  INFO AutowiredAnnotationBeanPostProcessor:478 - Autowired annotation is not supported on static fields: private static com.alibaba.druid.pool.DruidDataSource com.hth.springboot.utils.ImpalaUtils.dataSource
+2020-04-30 16:19:41,942  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:19:42,129  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:19:42,132  INFO StartupApplication:61 - Started StartupApplication in 16.717 seconds (JVM running for 22.539)
+2020-04-30 16:19:45,640  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:19:45,648  INFO DispatcherServlet:547 - Completed initialization in 7 ms
+2020-04-30 16:19:45,767  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 16:20:04,633  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:25:06,594  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:25:16,831  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:25:21,839  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 32139 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:25:21,839  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:25:23,075  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:25:23,164  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 1166 ms
+2020-04-30 16:25:23,443  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:25:23,667  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:25:23,672  INFO StartupApplication:61 - Started StartupApplication in 17.183 seconds (JVM running for 22.982)
+2020-04-30 16:25:33,813  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:25:33,820  INFO DispatcherServlet:547 - Completed initialization in 7 ms
+2020-04-30 16:25:33,843  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 16:25:34,856  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 16:25:34,857  INFO DAUController:28 - 返回结果是：
+2020-04-30 16:25:50,249  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:25:50,252  INFO DruidDataSource:1825 - {dataSource-1} closed
+2020-04-30 16:31:19,983  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:31:30,193  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5005 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:31:35,196  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 33350 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:31:35,197  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:31:36,075  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:31:36,167  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 802 ms
+2020-04-30 16:31:36,418  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:31:36,600  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:31:36,605  INFO StartupApplication:61 - Started StartupApplication in 16.713 seconds (JVM running for 22.55)
+2020-04-30 16:31:40,505  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:31:40,510  INFO DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-30 16:31:40,535  INFO DAUController:26 - 接收到请求，day：2020-04-17， event：1
+2020-04-30 16:31:41,978  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 16:31:42,792  INFO DAUController:28 - 返回结果是：57280,
+2020-04-30 16:31:49,932  INFO DAUController:26 - 接收到请求，day：2020-04-18， event：1
+2020-04-30 16:31:49,936  INFO DAUController:28 - 返回结果是：
+2020-04-30 16:31:57,981  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:31:57,991  INFO DruidDataSource:1825 - {dataSource-1} closed
+2020-04-30 16:41:22,596  INFO Version:21 - HV000001: Hibernate Validator 6.0.18.Final
+2020-04-30 16:41:32,806  WARN StartupInfoLogger:55 - InetAddress.getLocalHost().getHostName() took 5001 milliseconds to respond. Please verify your network configuration (macOS machines may need to add entries to /etc/hosts).
+2020-04-30 16:41:37,814  INFO StartupApplication:55 - Starting StartupApplication on TUdeMac-mini.local with PID 35335 (/Users/tu/IdeaProjects/springboot_startup/target/classes started by tu in /Users/tu/IdeaProjects/springboot_startup)
+2020-04-30 16:41:37,815  INFO StartupApplication:651 - No active profile set, falling back to default profiles: default
+2020-04-30 16:41:38,722  INFO TomcatWebServer:92 - Tomcat initialized with port(s): 8080 (http)
+2020-04-30 16:41:38,821  INFO ContextLoader:284 - Root WebApplicationContext: initialization completed in 844 ms
+2020-04-30 16:41:39,049  INFO ThreadPoolTaskExecutor:181 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:41:39,228  INFO TomcatWebServer:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-04-30 16:41:39,231  INFO StartupApplication:61 - Started StartupApplication in 16.726 seconds (JVM running for 22.661)
+2020-04-30 16:41:42,429  INFO DispatcherServlet:525 - Initializing Servlet 'dispatcherServlet'
+2020-04-30 16:41:42,435  INFO DispatcherServlet:547 - Completed initialization in 5 ms
+2020-04-30 16:41:42,458  INFO DAUController:26 - 接收到请求，day：2020-04-18， event：1
+2020-04-30 16:41:42,902  INFO DruidDataSource:930 - {dataSource-1} inited
+2020-04-30 16:41:43,641  INFO DAUController:28 - 返回结果是：63146
+2020-04-30 16:41:45,930  INFO DAUController:26 - 接收到请求，day：2020-04-18， event：1
+2020-04-30 16:41:47,946  INFO DAUController:28 - 返回结果是：63146
+2020-04-30 16:41:55,599  INFO DAUController:26 - 接收到请求，day：2020-04-19， event：1
+2020-04-30 16:41:57,600  INFO DAUController:28 - 返回结果是：55487
+2020-04-30 16:42:03,791  INFO DAUController:26 - 接收到请求，day：2020-04-20， event：1
+2020-04-30 16:42:08,032  INFO DAUController:28 - 返回结果是：60832
+2020-04-30 16:42:32,608  INFO DAUController:26 - 接收到请求，day：2020-04-21， event：1
+2020-04-30 16:42:35,650  INFO DAUController:28 - 返回结果是：123328
+2020-04-30 16:42:57,337  INFO ThreadPoolTaskExecutor:218 - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-04-30 16:42:57,340  INFO DruidDataSource:1825 - {dataSource-1} closed

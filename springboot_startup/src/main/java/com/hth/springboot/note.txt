@@ -1,0 +1,21 @@
+自定义属性的配置与加载
+定义：
+    application.properties 文件中可以直接声明自定义属性
+使用：
+    声明一个配置类，使用注解 @Component 交由spring管理
+    @Value("${customer_define_property_name}") 取值
+配置文件中的属性可以直接互相引用，引用格式为：${}
+在配置文件中使用随机值，使用格式 ${random.value|int[n]}
+
+配置类
+使用注解
+@ConfigurationProperties
+@PropertySource 指明配置文件
+
+@Controller：修饰class，用来创建处理http请求的对象
+@RestController：Spring4之后加入的注解，原来在@Controller中返回json需要@ResponseBody来配合，如果直接用@RestController替代
+                @Controller就不需要再配置@ResponseBody，默认返回json格式。
+@RequestMapping：配置url映射
+
+
+    

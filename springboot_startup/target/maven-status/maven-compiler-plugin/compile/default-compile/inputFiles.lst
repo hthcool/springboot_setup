@@ -1,0 +1,13 @@
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/dao/impl/UserDaoImpl.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/utils/JDBCUtils.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/bean/queryresult/PersonCount.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/utils/ImpalaConnection.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/controller/UserController.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/bean/status/InsertStatus.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/service/impl/UserServiceImpl.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/dao/UserDao.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/bean/requestparams/QueryDAUParams.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/StartupApplication.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/bean/queryresult/User.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/service/UserService.java
+/Users/tu/IdeaProjects/springboot_startup/src/main/java/com/hth/springboot/bean/config/AuthorInfo.java
