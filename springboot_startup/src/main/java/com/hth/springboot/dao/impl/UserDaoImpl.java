@@ -1,6 +1,6 @@
 package com.hth.springboot.dao.impl;
 
-import com.hth.springboot.bean.queryresult.User;
+import com.hth.springboot.bean.result.User;
 import com.hth.springboot.dao.UserDao;
 import org.springframework.stereotype.Repository;
 

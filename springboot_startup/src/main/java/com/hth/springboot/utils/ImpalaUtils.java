@@ -43,14 +43,22 @@ public class ImpalaUtils {
     public void close(ResultSet rs, PreparedStatement prep, Connection conn) {
         try {
             if (rs != null) rs.close();
-            if (prep != null) rs.close();
-            if (conn != null) rs.close();
+            if (prep != null) prep.close();
+            if (conn != null) conn.close();
         } catch (SQLException e) {
             log.error("资源关闭失败" + e.getMessage());
         }
     }
 
-
+    /**
+     * 查询 sql
+     * @param clazz 返回值类型
+     * @param sql sql
+     * @param params sql 入参
+     * @param <T> 返回值范型
+     * @return 返回值集合
+     * @throws InstantiationException
+     */
     public <T> List<T> executeQuery(Class<T> clazz, String sql, String... params) throws InstantiationException {
 
         ArrayList<T> result = new ArrayList<>();
@@ -58,6 +66,7 @@ public class ImpalaUtils {
         Connection conn = getImpalaConnection();
         PreparedStatement prep = null;
         ResultSet rs = null;
+
         try {
             prep = conn.prepareStatement(sql);
             if (params.length > 0) {
@@ -86,13 +95,11 @@ public class ImpalaUtils {
                 }
                 result.add(t);
             }
-
         } catch (SQLException | IllegalAccessException e) {
             e.printStackTrace();
         } finally {
             close(rs, prep, conn);
         }
-
         return result;
     }
 }

@@ -1,4 +1,4 @@
-package com.hth.springboot.bean.queryresult;
+package com.hth.springboot.bean.result;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PersonCount {
-    private Long count;
+public class User {
+    private String name;
+    private Integer pid;
 }

@@ -1,9 +1,12 @@
 package com.hth.springboot.service.impl;
 
+import com.hth.springboot.bean.response.Response;
 import com.hth.springboot.dao.DAUDao;
 import com.hth.springboot.service.DAUService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 /**
  * @Author hantenghui
@@ -17,7 +20,7 @@ public class DAUServiceImpl implements DAUService {
     private DAUDao dauDao;
 
     @Override
-    public String queryDauByDay(String day, String event) {
-        return dauDao.queryDAUByDayAndEvent(day, event);
+    public List queryDauByDay(String day, String event) {
+        return null;
     }
 }
