@@ -1,13 +1,9 @@
 package com.hth.springboot.dao.impl;
 
 import com.hth.springboot.dao.DAUDao;
-import com.hth.springboot.utils.ImpalaConnection;
+import com.hth.springboot.utils.ImpalaUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 /**
  * @Author hantenghui
@@ -18,7 +14,7 @@ import java.sql.SQLException;
 public class DAUDaoImpl implements DAUDao {
 
     @Autowired
-    private ImpalaConnection impalaConnection;
+    private ImpalaUtils impala;
 
     @Override
     public String queryDAUByDayAndEvent(String day, String event) {
